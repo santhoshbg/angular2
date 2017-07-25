@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files */
+
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 2em;
+}
+
+body,
+input[text],
+button {
+    color: #888888;
+    font-family: Cambria, Georgia;
+}
+
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+
+button {
+    font-family: Arial;
+    background-color: #eeeeee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #eeeeee;
+    color: #aaaaaa;
+    cursor: auto;
+}
+
+
+/* Navigation link styles  */
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+nav a:visited,
+a:link {
+    color: #607d8b;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+a:visited,
+a:link {
+    color: #607d8b;
+}
+
+a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+a.active {
+    color: #039be5;
+}
+
+
+/* Item class  */
+
+.items {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding-left: 0;
+    width: 10em;
+}
+
+.items li {
+    cursor: pointer;
+    position: relative;
+    background: #d9e1e7;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    color: #1d83c0;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px;
+    background: #f0f4f6;
+    margin-bottom: 2px;
+}
+
+.badge {
+    left: 0;
+    background-color: #ffffff;
+    margin: 0.1em;
+    padding: .3em;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.items .badge {
+    display: inline-block;
+    font-size: small;
+    color: #ffffff;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8b;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    height: 2.5em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+
+.items li.selected {
+    background-color: #8ac6e0;
+    color: #ffffff;
+}
+
+
+/*Product Details Styles  */
+
+.card-image {
+    float: left;
+    width: 40%;
+    height: 250px;
+}
+
+.card-image img {
+    height: 50%;
+}
+
+.right-content {
+    width: 60%;
+    float: left;
+}
+
+.card-title {
+    padding-left: 20px;
+}
