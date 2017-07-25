@@ -1,0 +1,58 @@
+<!-- <button class="waves-effect waves-light btn" (click)="makecall()">Authorize</button> -->
+<header>
+    <h2> {{ magentoPostService }} </h2>
+    <h3> <span> Key : {{ loginKey }} </span> </h3>
+    <!-- <h3> {{ errorMsg }} </h3> -->
+</header>
+
+
+
+<!-- San New Page  -->
+
+<div class="row" *ngFor="let item of items.items">
+    <div class="col-sm-5">
+        <a href="product1.html">
+            <!-- <img src="img/vase_1a.jpg" class="img-responsive" alt="item"> -->
+            <img src="http://localhost/magento2/pub/media/catalog/product/{{item.custom_attributes[4].value}}" class="tn" width="191" height="400" data-toggle="modal" data-target="#selectedImageModal" (click)=setSelectedImage(image)>
+            <span class="productlist-price-container">
+                        <span class="product-price">
+                        <!-- <span class="price"> price:{{ item.price }} </span> -->
+            </span>
+            </span>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="product2.html">
+            <img src="http://localhost/magento2/pub/media/catalog/product/{{item.custom_attributes[4].value}}" class="img-responsive thumbnailImg" alt="item">
+            <span class="productlist-price-container">
+                        <span class="product-price">
+                            <!-- <span class="price">28.00</span> -->
+            </span>
+            </span>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <ul class="productDetails-class">
+            <!-- <li> <span> ID:{{ item.id }} </span> </li> -->
+            <li> <span> name:{{ item.name }} </span> </li>
+            <li> <span> price:{{ item.price }} </span> </li>
+            <!-- <li> <span> type_id:{{ item.type_id }} </span> </li>
+            <li> <span> Attribute_set_id:{{ item.attribute_set_id }} </span> </li>
+            <li> <span> price:{{ item.price }} </span> </li> -->
+            <li> <span> status:{{ item.status }} </span> </li>
+            <!-- <li> <span> visibility:{{ item.visibility }} </span> </li>
+            <li> <span> type_id:{{ item.type_id }} </span> </li> -->
+            <li> <span> created_at:{{ item.created_at }} </span> </li>
+            <li> <span> updated_at:{{ item.updated_at }} </span> </li>
+            <li> <span> weight:{{ item.weight }} </span> </li>
+        </ul>
+        <!-- <a href="product3.html">
+            <img src="http://localhost/magento2/pub/media/catalog/product/{{item.custom_attributes[4].value}}" class="img-responsive" alt="item">
+            <span class="productlist-price-container">
+                        <span class="product-price">
+                            <span class="price">24.00</span>
+            </span>
+            </span>
+        </a> -->
+    </div>
+</div>
